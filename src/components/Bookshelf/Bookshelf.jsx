@@ -34,7 +34,7 @@ const Bookshelf = () => {
                 </form>
             </div>
             {books.map((book) => (
-                <div className="bookCardsDiv">
+                <div className="bookCardsDiv" key={book}>
                     <div>Title: {book.title}</div>
                     <div>Author: {book.author}</div>
                 </div>
